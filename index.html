@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+    <div class="header">
+        <h2 class="animation a1">Misha Mas Form</h2>
+        <h4 class="animation a2">Форма для пошуку праці для волнтерів</h4>
+    </div>
+    <div class="form">
+        <input type="email" class="form-field animation a3" placeholder="Ваше ім'я">
+        <input type="tel" class="form-field animation a4" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <input type="number" class="form-field animation a4" placeholder="Ваш вік">
+
+<!--        <p class="animation a5"><a href="#">Forgot Password</a></p>-->
+        <p class="animation a5">Маєшь досвід минулого волонтерства?</p>
+        <div class="radio animation a5">
+            <input label="Так" type="radio" id="male" name="gender" value="male" checked>
+            <input label="Ні" type="radio" id="female" name="gender" value="female">
+            <input label="Ні, але маю велику наснагу! ️" type="radio" id="other" name="gender" value="other">
+        </div>
+        <p class="animation a5">Вибери свою область:</p>
+        <small><a class="animation a6" href="map.html" target="_blank"> (Знайди свій регіон)</a></small>
+        <select class="select animation a5" name="cars">
+            <option value="volvo">Чернігівська</option>
+            <option value="saab">Чернівецька</option>
+            <option value="fiat">Київська</option>
+            <option value="audi">Житомирська</option>
+            <option value="audi">Волинська</option>
+            <option value="audi">Рівненська</option>
+            <option value="audi">Закарпатська</option>
+            <option value="audi">Івано-Франківська</option>
+            <option value="audi">Тернопільська</option>
+            <option value="audi">Хмельницька</option>
+            <option value="audi">Вінницька</option>
+            <option value="audi">Мого варінту не має!</option>
+        </select>
+        <textarea  class="textarea animation a5"name="message" placeholder="Напиши про свій досвід" style="width:1fr;"></textarea>
+        <button type="submit" class="animation a6" onclick={alert("Форма_відправлена")}>Надіслати форму</button>
+    </div>
+</div>
+</body>
+</html>
